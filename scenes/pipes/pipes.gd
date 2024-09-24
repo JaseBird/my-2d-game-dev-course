@@ -1,5 +1,7 @@
 extends Node2D
 
+class_name Pipes
+
 const SPEED: float = 120.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
