@@ -2,6 +2,9 @@ extends Node2D
 
 class_name Pipes
 
+@onready var score_sound: AudioStreamPlayer2D = $ScoreSound
+
+
 const OFF_SCREEN: float = -500
 
 func _ready() -> void:
@@ -24,3 +27,8 @@ func _on_screen_exited() -> void:
 
 func on_plane_died() -> void:
 	set_process(false)
+
+
+func _on_laser_body_entered(body: Node2D) -> void:
+	if body is Tappy:
+		score_sound.play()
