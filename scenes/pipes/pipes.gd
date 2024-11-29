@@ -32,6 +32,7 @@ func on_plane_died() -> void:
 func _on_laser_body_entered(body: Node2D) -> void:
 	if body is Tappy:
 		score_sound.play()
+		ScoreManager.increment_score()
 
 
 func _on_pipe_body_entered(body: Node2D) -> void:
