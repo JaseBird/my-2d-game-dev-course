@@ -18,7 +18,7 @@ rotation = 3.14159
 position = Vector2(0, 80)
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(38, -1)
+position = Vector2(70, -1)
 
 [node name="ScoreSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_1phn3")
