@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[/assets/top-header-h.png](https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg)" alt="Udemy Logo" width="500" />
+  <img src="/assets/Udemy_logo.png" alt="Udemy Logo" width="500" />
 </p>
 
 [Jumpstart to 2D Game Development: Godot 4.4+ for Beginners](https://www.udemy.com/course/jumpstart-to-2d-game-development-godot-4-for-beginners/?couponCode=ST22MT240325G3) Master the Godot 4 Engine, Build Engaging 2D Games, Learn GDScript and Ignite Your Game Development Journey! This repository showcases the games I have made with Godot as part of this course.
@@ -19,8 +19,8 @@ By the end of this course, I will have built a diverse portfolio of 2D game proj
 
 | Project | Lessons Learned | Repository | Godot Ver |
 | --- | --- | :---: | :---: |
-| **Gem Catcher** | IDE familiarisation, scene creation, input handling and collision detection | - | 4.3 |
-| **Flappy Bird** | scene creation, input handling, collision detection, and the implementation of parallax scrolling for enhanced visuals | - | 4.3 |
+| **Gem Catcher** | IDE familiarisation, scene creation, input handling and collision detection | [Code](https://github.com/JaseBird/tappy-plane/tree/main/01-gem-catcher) | 4.3 |
+| **Flappy Bird** | scene creation, input handling, collision detection, and the implementation of parallax scrolling for enhanced visuals | [Code](https://github.com/JaseBird/tappy-plane/tree/main/02-tappy-plane) | 4.3 |
 | **Angry Animals** | develop physics-based gameplay with projectile motion and mastering level design with destructible environments | - | 4.4 |
 | **Memory Madness** | build intuitive and visually appealing user interfaces | - | 4.4 |
 | **Fox Antics** | level design, character animation, controls to create challenging levels and state Machines | - | 4.4 |
