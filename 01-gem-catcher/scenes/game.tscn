@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://tg5h4cbfpvrh"]
+
+[ext_resource type="Texture2D" uid="uid://btcf6joaw1fap" path="res://assets/GameBg.png" id="1_87exp"]
+[ext_resource type="Script" path="res://scenes/game.gd" id="1_kmgpv"]
+[ext_resource type="PackedScene" uid="uid://rvmrgdm87ltw" path="res://scenes/paddle.tscn" id="2_503eg"]
+[ext_resource type="PackedScene" uid="uid://bis6nlaixdd85" path="res://scenes/gem.tscn" id="2_tqacw"]
+[ext_resource type="AudioStream" uid="uid://co0qv0loi2pdy" path="res://assets/bgm_action_5.mp3" id="5_i3qyi"]
+[ext_resource type="AudioStream" uid="uid://sns5odxulo4m" path="res://assets/spell1_0.wav" id="6_a1pr4"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_kmgpv")
+gem_scene = ExtResource("2_tqacw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(570, 318)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_87exp")
+
+[node name="Paddle" parent="." instance=ExtResource("2_503eg")]
+position = Vector2(570, 586)
+
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 134.0
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(0.299313, 0.640279, 0.563178, 1)
+theme_override_colors/font_shadow_color = Color(0.825538, 0.929173, 0.96683, 1)
+theme_override_colors/font_outline_color = Color(0.114036, 0.452228, 0.407589, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 48
+text = "00000"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_i3qyi")
+volume_db = -12.0
+autoplay = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_a1pr4")
+
+[node name="GameOverLabel" type="Label" parent="."]
+visible = false
+offset_left = 326.0
+offset_top = 84.0
+offset_right = 773.0
+offset_bottom = 191.0
+theme_override_font_sizes/font_size = 78
+text = "GAME OVER"
+
+[connection signal="area_entered" from="Paddle" to="." method="_on_paddle_area_entered"]
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
