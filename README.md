@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/assets/Udemy_logo.png" alt="Udemy Logo" width="500" />
+  <img src="/assets/godot-logo.svg" alt="Godot game engine Logo" width="500" />
 </p>
 
 [Jumpstart to 2D Game Development: Godot 4.4+ for Beginners](https://www.udemy.com/course/jumpstart-to-2d-game-development-godot-4-for-beginners/?couponCode=ST22MT240325G3) Master the Godot 4 Engine, Build Engaging 2D Games, Learn GDScript and Ignite Your Game Development Journey! This repository showcases the games I have made with Godot as part of this course.
