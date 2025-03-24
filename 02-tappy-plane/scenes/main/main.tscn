@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://g4t5yr8d5q7b"]
 
 [ext_resource type="Texture2D" uid="uid://cxjy5u33hsmwn" path="res://assets/background/sky.png" id="1_716n1"]
-[ext_resource type="Script" path="res://scenes/main/main.gd" id="1_aw31d"]
+[ext_resource type="Script" uid="uid://84lujmw0mjkd" path="res://scenes/main/main.gd" id="1_aw31d"]
 [ext_resource type="LabelSettings" uid="uid://bl3p68baocwhh" path="res://assets/LG_red_72.tres" id="2_b2asm"]
 [ext_resource type="FontFile" uid="uid://dfdthmnbkcv5j" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="3_23ciw"]
 [ext_resource type="LabelSettings" uid="uid://c37krc3ddegv" path="res://assets/LG_red_24.tres" id="4_vugsm"]
@@ -34,7 +34,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_si50b"]
 _data = {
-"flash": SubResource("Animation_180ij")
+&"flash": SubResource("Animation_180ij")
 }
 
 [node name="Main" type="Control"]
@@ -106,7 +106,7 @@ vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_si50b")
+&"": SubResource("AnimationLibrary_si50b")
 }
 autoplay = "flash"
 

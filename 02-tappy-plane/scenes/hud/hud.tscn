@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dgltayf476h6j"]
 
 [ext_resource type="LabelSettings" uid="uid://dgdbtfbw6al03" path="res://assets/LG_red_64.tres" id="1_2re1r"]
-[ext_resource type="Script" path="res://scenes/hud/hud.gd" id="1_6b115"]
+[ext_resource type="Script" uid="uid://doo6p4fuuvlxv" path="res://scenes/hud/hud.gd" id="1_6b115"]
 
 [node name="Hud" type="Control"]
 layout_mode = 3

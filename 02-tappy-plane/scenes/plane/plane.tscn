@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://d0igs30lu24ku"]
 
 [ext_resource type="Texture2D" uid="uid://cee24hsyfbfix" path="res://assets/plane/planes_sheet.png" id="1_7ndft"]
-[ext_resource type="Script" path="res://scenes/plane/plane.gd" id="1_sqwi5"]
+[ext_resource type="Script" uid="uid://dp5ckbcti5coc" path="res://scenes/plane/plane.gd" id="1_sqwi5"]
 [ext_resource type="AudioStream" uid="uid://cxlrcymsxfbex" path="res://assets/audio/engine.mp3" id="3_x7c52"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l4wan"]
@@ -70,8 +70,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gfa4w"]
 _data = {
-"RESET": SubResource("Animation_rkgkj"),
-"power": SubResource("Animation_47xpd")
+&"RESET": SubResource("Animation_rkgkj"),
+&"power": SubResource("Animation_47xpd")
 }
 
 [node name="Plane" type="CharacterBody2D" groups=["Plane"]]

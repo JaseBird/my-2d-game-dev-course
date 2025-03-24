@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b8lvbqwrxkvvg"]
 
-[ext_resource type="Script" path="res://scenes/simple_transition/simple_transition.gd" id="1_fji4c"]
+[ext_resource type="Script" uid="uid://lx86qy20hfo2" path="res://scenes/simple_transition/simple_transition.gd" id="1_fji4c"]
 [ext_resource type="Texture2D" uid="uid://cxjy5u33hsmwn" path="res://assets/background/sky.png" id="1_xq8l4"]
 [ext_resource type="LabelSettings" uid="uid://dgdbtfbw6al03" path="res://assets/LG_red_64.tres" id="2_a4541"]
 
