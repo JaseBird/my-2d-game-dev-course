@@ -20,7 +20,7 @@ By the end of this course, I will have built a diverse portfolio of 2D game proj
 | Project | Lessons Learned | Repository | Godot Ver |
 | --- | --- | :---: | :---: |
 | **Gem Catcher** | IDE familiarisation, scene creation, input handling and collision detection | [Code](https://github.com/JaseBird/tappy-plane/tree/main/01-gem-catcher) | 4.3 |
-| **Flappy Bird** | scene creation, input handling, collision detection, and the implementation of parallax scrolling for enhanced visuals | [Code](https://github.com/JaseBird/tappy-plane/tree/main/02-tappy-plane) | 4.3 |
+| **Tappy Plane** | scene creation, input handling, collision detection, and the implementation of parallax scrolling for enhanced visuals | [Code](https://github.com/JaseBird/tappy-plane/tree/main/02-tappy-plane) | 4.3 |
 | **Angry Animals** | develop physics-based gameplay with projectile motion and mastering level design with destructible environments | - | 4.4 |
 | **Memory Madness** | build intuitive and visually appealing user interfaces | - | 4.4 |
 | **Fox Antics** | level design, character animation, controls to create challenging levels and state Machines | - | 4.4 |
