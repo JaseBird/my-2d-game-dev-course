@@ -22,7 +22,7 @@ By the end of this course, I will have built a diverse portfolio of 2D game proj
 | **Gem Catcher** | IDE familiarisation, scene creation, input handling and collision detection | [Code](https://github.com/JaseBird/tappy-plane/tree/main/01-gem-catcher) | 4.3 |
 | **Tappy Plane** | scene creation, input handling, collision detection, and the implementation of parallax scrolling for enhanced visuals | [Code](https://github.com/JaseBird/tappy-plane/tree/main/02-tappy-plane) | 4.3 |
 | **Angry Animals** | develop physics-based gameplay with projectile motion and mastering level design with destructible environments | - | 4.4 |
-| **Memory Madness** | build intuitive and visually appealing user interfaces | - | 4.4 |
+| **Memory Madness** | build intuitive and visually appealing user interfaces | [Code](https://github.com/JaseBird/my-2d-game-dev-course/tree/main/04-memory-madness) | 4.4 |
 | **Fox Antics** | level design, character animation, controls to create challenging levels and state Machines | - | 4.4 |
 | **Sokoban** | dynamically load levels from files, puzzle-solving mechanics, and apply design patterns | - | 4.4 |
 | **Space Ace** | design and implement enemy AI with path following for dynamic enemy waves, integrate power-up systems, and enhance visuals with particle effects and other enhancements | - | 4.4 |
