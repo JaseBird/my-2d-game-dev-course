@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://borgmpehlrqfj"]
+[gd_scene load_steps=3 format=3 uid="uid://borgmpehlrqfj"]
 
 [ext_resource type="LabelSettings" uid="uid://bksxsml8pqtmn" path="res://Resources/TitleLable_72.tres" id="1_p8rbg"]
+[ext_resource type="PackedScene" uid="uid://dem5ujlgi5jvk" path="res://Scenes/LevelButton/LevelButton.tscn" id="2_qtv3y"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -36,6 +37,31 @@ vertical_alignment = 1
 
 [node name="HBLevelButtons" type="HBoxContainer" parent="UiContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 12
+
+[node name="LevelButton1" parent="UiContainer/HBLevelButtons" instance=ExtResource("2_qtv3y")]
+layout_mode = 2
+
+[node name="LevelButton2" parent="UiContainer/HBLevelButtons" instance=ExtResource("2_qtv3y")]
+layout_mode = 2
+level_number = 2
+
+[node name="LevelButton3" parent="UiContainer/HBLevelButtons" instance=ExtResource("2_qtv3y")]
+layout_mode = 2
+level_number = 3
+
+[node name="LevelButton4" parent="UiContainer/HBLevelButtons" instance=ExtResource("2_qtv3y")]
+layout_mode = 2
+level_number = 4
+
+[node name="LevelButton5" parent="UiContainer/HBLevelButtons" instance=ExtResource("2_qtv3y")]
+layout_mode = 2
+level_number = 5
+
+[node name="LevelButton6" parent="UiContainer/HBLevelButtons" instance=ExtResource("2_qtv3y")]
+layout_mode = 2
+level_number = 6
 
 [node name="HBSprites" type="HBoxContainer" parent="UiContainer"]
 layout_mode = 2

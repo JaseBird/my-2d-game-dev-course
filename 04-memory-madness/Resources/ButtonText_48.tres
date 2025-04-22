@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://buygwrtv0tabd"]
+
+[ext_resource type="FontFile" uid="uid://dmntdcny1vrn0" path="res://Assets/fonts/LuckiestGuy-Regular.ttf" id="1_kny1p"]
+
+[resource]
+line_spacing = 0.0
+font = ExtResource("1_kny1p")
+font_size = 48
