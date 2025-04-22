@@ -1,18 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://c4qjc2kr3fh07"]
 
+[ext_resource type="Script" uid="uid://dssulm7c21f4m" path="res://Scenes/Master/Master.gd" id="1_1t0lv"]
 [ext_resource type="Texture2D" uid="uid://4juq7f63b6qg" path="res://Assets/images/backgroundEmpty.png" id="1_o4rt4"]
 [ext_resource type="PackedScene" uid="uid://borgmpehlrqfj" path="res://Scenes/Main/Main.tscn" id="2_7tgqy"]
 [ext_resource type="PackedScene" uid="uid://drwd5t0cuxktb" path="res://Scenes/Game/Game.tscn" id="3_7tgqy"]
-
-[sub_resource type="GDScript" id="GDScript_388ua"]
-script/source = "extends Control
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	var st = LevelDataSelector.get_level_setting(7)
-	pass
-"
 
 [node name="Master" type="Control"]
 layout_mode = 3
@@ -21,7 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = SubResource("GDScript_388ua")
+script = ExtResource("1_1t0lv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -36,8 +27,8 @@ expand_mode = 1
 [node name="Music" type="AudioStreamPlayer" parent="."]
 
 [node name="Main" parent="." instance=ExtResource("2_7tgqy")]
-visible = false
 layout_mode = 1
 
 [node name="Game" parent="." instance=ExtResource("3_7tgqy")]
+visible = false
 layout_mode = 1
