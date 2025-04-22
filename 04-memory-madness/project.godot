@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="memory-madness"
+run/main_scene="uid://c4qjc2kr3fh07"
 config/features=PackedStringArray("4.4", "Mobile")
 
 [autoload]
@@ -23,6 +24,8 @@ SoundManager="*res://Globals/SoundManager.gd"
 
 window/size/viewport_width=1024
 window/size/viewport_height=768
+window/size/resizable=false
+window/size/borderless=true
 window/stretch/mode="canvas_items"
 
 [editor]
