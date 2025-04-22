@@ -29,12 +29,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Spacer" type="Control" parent="UiContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
 [node name="GameTitle" type="Label" parent="UiContainer"]
 layout_mode = 2
 text = "MEMORY MADNESS"
 label_settings = ExtResource("1_p8rbg")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Spacer2" type="Control" parent="UiContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 3
 
 [node name="HBLevelButtons" type="HBoxContainer" parent="UiContainer"]
 layout_mode = 2
@@ -64,9 +73,14 @@ level_number = 5
 layout_mode = 2
 level_number = 6
 
+[node name="Spacer3" type="Control" parent="UiContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
 [node name="HBSprites" type="HBoxContainer" parent="UiContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_constants/separation = 48
 
 [node name="FrontSprite" parent="UiContainer/HBSprites" instance=ExtResource("3_cmk6n")]
 layout_mode = 2
@@ -82,3 +96,7 @@ layout_mode = 2
 
 [node name="FrontSprite5" parent="UiContainer/HBSprites" instance=ExtResource("3_cmk6n")]
 layout_mode = 2
+
+[node name="Spacer4" type="Control" parent="UiContainer"]
+layout_mode = 2
+size_flags_vertical = 3
