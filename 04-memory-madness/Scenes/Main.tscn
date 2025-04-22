@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4qjc2kr3fh07"]
+[gd_scene load_steps=3 format=3 uid="uid://c4qjc2kr3fh07"]
 
+[ext_resource type="Script" uid="uid://d2udspg7cvm3p" path="res://Scenes/Main.gd" id="1_idj7w"]
 [ext_resource type="Texture2D" uid="uid://4juq7f63b6qg" path="res://Assets/images/backgroundEmpty.png" id="1_r150o"]
 
 [node name="Main" type="Control"]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_idj7w")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
