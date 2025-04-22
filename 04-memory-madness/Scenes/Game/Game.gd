@@ -1,6 +1,6 @@
 extends Control
 
-@onready var tile_grid: GridContainer = $HBoxContainer/TileGrid
+@onready var tile_grid: GridContainer = $UI/TileGrid
 const MEMORY_TILE = preload("res://Scenes/MemoryTile/MemoryTile.tscn")
 
 # Called when the node enters the scene tree for the first time.
