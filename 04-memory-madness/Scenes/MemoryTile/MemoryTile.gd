@@ -1,8 +1,8 @@
 extends TextureButton
+class_name  MemoryTile
 
 @onready var frame_image: TextureRect = $FrameImage
 @onready var item_image: TextureRect = $ItemImage
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

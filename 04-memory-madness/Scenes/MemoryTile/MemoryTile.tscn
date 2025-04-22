@@ -22,7 +22,6 @@ texture_normal = ExtResource("1_dtpqw")
 script = ExtResource("2_o5k6v")
 
 [node name="FrameImage" type="TextureRect" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,7 +31,6 @@ grow_vertical = 2
 texture = ExtResource("2_4q7u0")
 
 [node name="ItemImage" type="TextureRect" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
