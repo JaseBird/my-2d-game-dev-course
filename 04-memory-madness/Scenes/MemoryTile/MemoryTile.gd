@@ -24,7 +24,15 @@ func matches_other_tile(other: MemoryTile) -> bool:
 
 
 func kill_on_success() -> void:
-	scale = Vector2.ZERO
+	z_index = 1
+	var tween: Tween = create_tween()
+	tween.set_parallel(true)
+	tween.tween_property(self, "disabled", true, 0)
+	tween.tween_property(self, "rotation_degrees", 720, 0.5)
+	tween.tween_property(self, "scale", Vector2(1.5,1.5), 0.5)
+	tween.set_parallel(false)
+	tween.tween_interval(0.6)
+	tween.tween_property(self, "scale", Vector2.ZERO, 0)
 
 
 func _on_pressed() -> void:

@@ -13,11 +13,19 @@ func _enter_tree() -> void:
 	SignalHub.on_tile_selected.connect(on_tile_selected)
 
 
+func check_for_pair() -> void:
+	if _selections[0].matches_other_tile(_selections[1]) == true:
+		_selections[0].kill_on_success()
+		_selections[1].kill_on_success()
+		SoundManager.play_sound(sound, SoundManager.SOUND_SUCCESS)
+
+
 func process_pair() -> void:
 	if _selections.size() != 2:
 		return
 	SelectionEnabled = false
 	reveal_timer.start()
+	check_for_pair();
 
 
 func on_tile_selected(tile: MemoryTile) -> void:
