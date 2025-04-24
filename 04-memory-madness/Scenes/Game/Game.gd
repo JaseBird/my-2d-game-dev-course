@@ -3,6 +3,8 @@ extends Control
 @onready var tile_grid: GridContainer = $UI/TileGrid
 @onready var sound: AudioStreamPlayer = $Sound
 @onready var scorer: Scorer = $Scorer
+@onready var moves_label: Label = $UI/MarginContainer/VBoxContainer/HBoxMoves/MovesLabel
+@onready var pairs_label: Label = $UI/MarginContainer/VBoxContainer/HBoxPairs/PairsLabel
 
 
 const MEMORY_TILE = preload("res://Scenes/MemoryTile/MemoryTile.tscn")
@@ -14,6 +16,11 @@ func _ready() -> void:
 
 func _enter_tree() -> void:
 	SignalHub.on_level_selected.connect(_on_level_selected)
+
+
+func _process(delta: float) -> void:
+	moves_label.text = scorer.get_moves_made_str()
+	pairs_label.text = scorer.get_pairs_made_str()	
 
 
 func add_memory_tile(image: Texture2D, frame: Texture2D) -> void:
