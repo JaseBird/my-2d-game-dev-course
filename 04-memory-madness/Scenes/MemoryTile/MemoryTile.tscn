@@ -45,4 +45,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_o5k6v")
 
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+
 [connection signal="pressed" from="." to="." method="_on_pressed"]
