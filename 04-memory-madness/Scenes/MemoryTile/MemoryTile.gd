@@ -19,6 +19,14 @@ func setup(image: Texture2D, frame: Texture2D) -> void:
 	frame_image.texture = frame
 
 
+func matches_other_tile(other: MemoryTile) -> bool:
+	return other != self and other.item_image.texture == item_image.texture
+
+
+func kill_on_success() -> void:
+	scale = Vector2.ZERO
+
+
 func _on_pressed() -> void:
 	if Scorer.SelectionEnabled == true:
 		reveal(true)
