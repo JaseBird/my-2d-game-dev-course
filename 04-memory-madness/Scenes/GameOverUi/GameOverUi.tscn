@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7kxrjr7e6rna"]
+
+[ext_resource type="Script" uid="uid://cvheeun1cilqn" path="res://Scenes/GameOverUi/GameOverUi.gd" id="1_byt08"]
+[ext_resource type="Texture2D" uid="uid://dao7u21ufjymc" path="res://Assets/ui/UIbg.png" id="1_mdbud"]
+[ext_resource type="LabelSettings" uid="uid://bksxsml8pqtmn" path="res://Resources/TitleLable_72.tres" id="2_byt08"]
+[ext_resource type="LabelSettings" uid="uid://djscvym0p8pc2" path="res://Resources/DarkGreyLable_24.tres" id="3_yiwjn"]
+
+[node name="GameOverUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_byt08")
+
+[node name="NPR" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -180.0
+offset_right = 256.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_mdbud")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="VB" type="VBoxContainer" parent="NPR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="NPR/VB"]
+layout_mode = 2
+text = "YOU WIN"
+label_settings = ExtResource("2_byt08")
+
+[node name="MovesLabel" type="Label" parent="NPR/VB"]
+layout_mode = 2
+text = "asdasdasdasd"
+label_settings = ExtResource("3_yiwjn")
+horizontal_alignment = 1

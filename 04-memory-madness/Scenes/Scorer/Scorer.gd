@@ -52,7 +52,7 @@ func process_pair() -> void:
 func check_game_over() -> void:
 	if _pairs_made == _target_pairs:
 		SelectionEnabled = false
-		SignalHub.emit_on_game_over()
+		SignalHub.emit_on_game_over(_moves_made)
 	else:
 		SelectionEnabled = true
 

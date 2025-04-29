@@ -16,7 +16,7 @@ func show_game(s: bool) -> void:
 	game.visible = s
 	main.visible = !s
 
-func _on_level_selected(level_num: int) -> void:
+func _on_level_selected(_level_num: int) -> void:
 	SoundManager.play_sound(music, SoundManager.SOUND_IN_GAME)
 	show_game(true)
 
