@@ -7,7 +7,6 @@ class_name EnemyBase
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
 const FALL_OFF_Y: float = 800.0
 
 var _gravity: float = 800.0

@@ -10,7 +10,7 @@ const JUMP_VELOCITY = -370.0
 const RUN_SPEED = 120.0
 const MAX_FALL = 350.0
 
-var fell_off_y: float = 800.0
+var fell_off_y: float = 200.0
 
 func _enter_tree() -> void:
 	add_to_group(Constants.PLAYER_GROUP)

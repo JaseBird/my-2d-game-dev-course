@@ -76,6 +76,8 @@ size = Vector2(20, 16)
 [node name="Frog" instance=ExtResource("1_wocr3")]
 collision_mask = 1
 script = ExtResource("2_iwcnn")
+points = null
+speed = null
 
 [node name="CollisionShape2D" parent="." index="0"]
 rotation = 1.5707964
