@@ -5,8 +5,8 @@ extends EnemyBase
 const JUMP_VELOCITY_R: Vector2 = Vector2(100, -150)
 const JUMP_VELOCITY_L: Vector2 = Vector2(-100, -150)
 
-var _seen_player: bool = false
 var _can_jump: bool = false
+var _seen_player: bool = false
 
 func _physics_process(delta: float) -> void:
 	super._physics_process(delta)
@@ -20,10 +20,6 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		velocity.x = 0
 		animated_sprite_2d.play("idle")
-
-
-func flip_me() -> void:
-	animated_sprite_2d.flip_h = global_position.x < _player_ref.global_position.x
 
 
 func apply_jump() -> void:

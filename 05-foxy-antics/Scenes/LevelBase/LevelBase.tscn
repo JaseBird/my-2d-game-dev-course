@@ -235,7 +235,7 @@ sources/0 = SubResource("TileSetAtlasSource_bgw71")
 [node name="LevelBase" type="Node2D"]
 
 [node name="Eagle" parent="." instance=ExtResource("5_lmtt4")]
-position = Vector2(426, -328)
+position = Vector2(644, -337)
 
 [node name="Platforms" type="TileMapLayer" parent="."]
 position = Vector2(0, -765)

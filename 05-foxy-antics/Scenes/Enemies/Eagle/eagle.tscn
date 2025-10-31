@@ -47,6 +47,7 @@ radius = 13.0
 
 [node name="Eagle" instance=ExtResource("1_rctvk")]
 script = ExtResource("2_laodr")
+fly_speed = Vector2(35, 15)
 
 [node name="CollisionShape2D" parent="." index="0"]
 shape = SubResource("CircleShape2D_laodr")
@@ -60,8 +61,13 @@ frame_progress = 0.33929828
 position = Vector2(-1, 1)
 shape = SubResource("CircleShape2D_xq53t")
 
-[node name="RayCast2D" type="RayCast2D" parent="." index="4"]
+[node name="PlayerDetector" type="RayCast2D" parent="." index="4"]
 target_position = Vector2(0, 300)
 collision_mask = 2
 collide_with_areas = true
 collide_with_bodies = false
+
+[node name="DirectionTimer" type="Timer" parent="." index="5"]
+wait_time = 3.0
+
+[connection signal="timeout" from="DirectionTimer" to="." method="_on_direction_timer_timeout"]
