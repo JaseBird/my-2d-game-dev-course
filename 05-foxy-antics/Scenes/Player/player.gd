@@ -2,8 +2,6 @@ extends CharacterBody2D
 
 class_name Player
 
-@export var fell_off_y: float = 800.0
-
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var debug_label: Label = $DebugLabel
 
@@ -12,6 +10,10 @@ const JUMP_VELOCITY = -370.0
 const RUN_SPEED = 120.0
 const MAX_FALL = 350.0
 
+var fell_off_y: float = 800.0
+
+func _enter_tree() -> void:
+	add_to_group(Constants.PLAYER_GROUP)
 
 func _physics_process(delta: float) -> void:
 	velocity.y += GRAVITY * delta
