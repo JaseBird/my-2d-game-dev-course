@@ -12,7 +12,7 @@ config_version=5
 
 config/name="foxy-antics"
 run/main_scene="uid://bweeubeq3iomn"
-config/features=PackedStringArray("4.4", "Mobile")
+config/features=PackedStringArray("4.5", "Mobile")
 config/icon="uid://clw8lnp8dohbg"
 
 [display]
