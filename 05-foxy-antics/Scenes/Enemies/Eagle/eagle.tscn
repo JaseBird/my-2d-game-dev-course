@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://cw6v5u3i12ufa"]
+
+[ext_resource type="PackedScene" uid="uid://b3n4wflha15do" path="res://Scenes/Enemies/EnemyBase.tscn" id="1_rctvk"]
+[ext_resource type="Texture2D" uid="uid://boknu87my3wsy" path="res://Assets/enemies/eagle/eagle-attack.png" id="2_jesq6"]
+[ext_resource type="Script" uid="uid://b11aekn1jke6p" path="res://Scenes/Enemies/Eagle/eagle.gd" id="2_laodr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_laodr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vnjor"]
+atlas = ExtResource("2_jesq6")
+region = Rect2(0, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26eia"]
+atlas = ExtResource("2_jesq6")
+region = Rect2(40, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3uhx3"]
+atlas = ExtResource("2_jesq6")
+region = Rect2(80, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbq4f"]
+atlas = ExtResource("2_jesq6")
+region = Rect2(120, 0, 40, 41)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v4oeh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vnjor")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26eia")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3uhx3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbq4f")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xq53t"]
+radius = 13.0
+
+[node name="Eagle" instance=ExtResource("1_rctvk")]
+script = ExtResource("2_laodr")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_laodr")
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = SubResource("SpriteFrames_v4oeh")
+animation = &"fly"
+frame_progress = 0.33929828
+
+[node name="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2(-1, 1)
+shape = SubResource("CircleShape2D_xq53t")
+
+[node name="RayCast2D" type="RayCast2D" parent="." index="4"]
+target_position = Vector2(0, 300)
+collision_mask = 2
+collide_with_areas = true
+collide_with_bodies = false
