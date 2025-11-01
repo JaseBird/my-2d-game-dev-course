@@ -30,6 +30,7 @@ func flip_me() -> void:
 func die() -> void:
 	set_physics_process(false)
 	queue_free()
+	SignalHub.emit_on_create_object(global_position, Constants.ObjectType.EXPLOSION)
 
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
