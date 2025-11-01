@@ -4,6 +4,7 @@ class_name Player
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var debug_label: Label = $DebugLabel
+@onready var shooter: Shooter = $Shooter
 
 const GRAVITY: float = 690.0
 const JUMP_VELOCITY = -370.0
@@ -15,6 +16,11 @@ var fell_off_y: float = 200.0
 func _enter_tree() -> void:
 	add_to_group(Constants.PLAYER_GROUP)
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("shoot") == true:
+		var dir: Vector2 = Vector2.LEFT if sprite_2d.flip_h else Vector2.RIGHT
+		shooter.shoot(dir)
+
 func _physics_process(delta: float) -> void:
 	velocity.y += GRAVITY * delta
 	velocity.y = clamp(velocity.y, JUMP_VELOCITY, MAX_FALL)
@@ -25,12 +31,14 @@ func _physics_process(delta: float) -> void:
 		
 	jump()
 	move_and_slide()
-	update_debug_label()
 	fallen_off()
+	update_debug_label()
+
 
 func jump() -> void:
 	if is_on_floor() and Input.is_action_just_pressed("jump") == true:
 		velocity.y = JUMP_VELOCITY
+
 
 func update_debug_label() -> void:
 	var ds: String = ""
@@ -38,6 +46,7 @@ func update_debug_label() -> void:
 	ds += "V:%.1f,%.1f\n" % [velocity.x, velocity.y]
 	ds += "P:%.1f,%.1f" % [global_position.x, global_position.y]
 	debug_label.text = ds
+
 
 func fallen_off() -> void:
 	if global_position.y > fell_off_y:

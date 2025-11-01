@@ -4,9 +4,9 @@ extends EnemyBase
 
 @onready var player_detector: RayCast2D = $PlayerDetector
 @onready var direction_timer: Timer = $DirectionTimer
+@onready var shooter: Shooter = $Shooter
 
 var _fly_direction: Vector2 = Vector2.ZERO
-var _can_shoot: bool = true
 
 
 func _physics_process(delta: float) -> void:
@@ -25,12 +25,9 @@ func fly_to_player() -> void:
 
 
 func shoot() -> void:
-	if player_detector.is_colliding() == true and _can_shoot == true:
-		_can_shoot = false
-	
-	# reset shoot
-	if player_detector.is_colliding() == false and _can_shoot == false:
-		_can_shoot = true
+	if player_detector.is_colliding() == true:
+		var dir: Vector2 = global_position.direction_to(_player_ref.global_position)
+		shooter.shoot(dir)
 
 
 # Node signal functions
