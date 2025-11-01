@@ -4,7 +4,8 @@ extends Node2D
 const OBJECT_SCENES: Dictionary[Constants.ObjectType, PackedScene] = {
 	Constants.ObjectType.BULLET_PLAYER: preload("uid://bsb20y7g82uh5"),
 	Constants.ObjectType.BULLET_ENEMY: preload("uid://cs88dhbfhicwx"),
-	Constants.ObjectType.EXPLOSION: preload("uid://bcciqbquwmhf4")
+	Constants.ObjectType.EXPLOSION: preload("uid://bcciqbquwmhf4"),
+	Constants.ObjectType.PICKUP: preload("uid://dlkug7jm3vj68")
 }
 
 

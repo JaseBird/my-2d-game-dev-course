@@ -245,9 +245,18 @@ tile_set = SubResource("TileSet_akiud")
 position = Vector2(401, -199)
 
 [node name="Snail" parent="." instance=ExtResource("3_78m1b")]
-position = Vector2(132, -33)
+position = Vector2(133, -26)
 
 [node name="Frog" parent="." instance=ExtResource("4_3lxj6")]
 position = Vector2(482, -187)
 
 [node name="ObjectMaker" parent="." instance=ExtResource("7_txgif")]
+
+[node name="Snail2" parent="." instance=ExtResource("3_78m1b")]
+position = Vector2(401, -24)
+
+[node name="Snail3" parent="." instance=ExtResource("3_78m1b")]
+position = Vector2(573, -26)
+
+[node name="Snail4" parent="." instance=ExtResource("3_78m1b")]
+position = Vector2(768, -232)
