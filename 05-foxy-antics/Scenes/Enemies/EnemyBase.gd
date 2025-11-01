@@ -17,16 +17,20 @@ func _ready() -> void:
 	if _player_ref == null:
 		queue_free()
 
+
 func _physics_process(delta: float) -> void:
 	if global_position.y > FALL_OFF_Y:
 		queue_free()
-		
+
+
 func flip_me() -> void:
 	animated_sprite_2d.flip_h = global_position.x < _player_ref.global_position.x
+
 
 func die() -> void:
 	set_physics_process(false)
 	queue_free()
+
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
 	pass # Replace with function body.
