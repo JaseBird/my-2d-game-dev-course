@@ -21,6 +21,16 @@ window/size/viewport_width=1024
 window/size/viewport_height=768
 window/stretch/mode="viewport"
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://Classes/": "orange",
+"res://Globals/": "yellow",
+"res://Resources/": "green",
+"res://Scenes/": "blue"
+}
+
 [input]
 
 jump={
